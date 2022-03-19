@@ -11,7 +11,6 @@ import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 /**
  *
  * @author reevd
@@ -114,18 +113,6 @@ public void addMovie(String name, String actor, String actress, String director,
         Scanner sc=new Scanner(System.in);
         MyMovies obj=new MyMovies();
         ResultSet rs;
-        
-        /*  ///////////ADD MOVIES////////////////////
-        try {
-            obj.addMovie("The Batman","mr","mrs","me",2022);            System.out.println("Adding");
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(MyMovies.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(MyMovies.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        ///////////ADD MOVIES////////////////////
-        */
-      
         try {
             rs = obj.displayMovies();
             System.out.println("id"+"| "+"name"+" | "+"actor"+" | "+"actress"+" | "+"director"+" | "+"year");
@@ -158,12 +145,7 @@ public void addMovie(String name, String actor, String actress, String director,
         } catch (SQLException ex) {
             Logger.getLogger(MyMovies.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
-        
-        
-            
+               
     }
     
 }
